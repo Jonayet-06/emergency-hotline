@@ -1,6 +1,6 @@
 // for adding heart
 const hearts = document.getElementsByClassName('heart');
-// console.log(hearts);
+
 
 for(const heart of hearts){
     heart.addEventListener('click', function(){
@@ -56,3 +56,18 @@ for(const call of calls){
 
 // Add copying btn
 
+const copies = document.getElementsByClassName('card-copy-btn');
+
+for(const copy of copies){
+    copy.addEventListener('click', function(){
+        const copyNumber = copy.parentNode.parentNode.children[1].children[2].innerText;
+        alert(`Number has been copied: ${copyNumber}`);
+
+        const totalCopy = document.getElementById('update-copy-btn').innerText;
+         const updateTotalCopy = parseInt(totalCopy);
+
+         // current copy
+        const reupdateTotalCopy = updateTotalCopy + 1;
+         document.getElementById('update-copy-btn').innerText = reupdateTotalCopy;
+    })
+}
