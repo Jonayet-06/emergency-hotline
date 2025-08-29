@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>emergency-service.netlify.app</title>
 
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -25,7 +25,7 @@
         <div class="right-div flex">
             <div class="mr-2">
                 <button class="btn bg-[#ecfff0] rounded-3xl w-[150px] h-[50px]">
-                    <p class="flex items-center">0 <span><img class="h-[30px] w-[30px] ml-2" src="./assets/heart.png" alt=""></span></p>
+                    <p class="flex items-center"><span id="mainHeart">0</span> <span> <img class="h-[30px] w-[30px] ml-2" src="./assets/heart.png" alt=""></span></p>
                     </button>
             </div>
             <div class="mr-2">
@@ -55,7 +55,7 @@
         <div class="w-full md:w-[300px] h-[360px] bg-white rounded-2xl p-8">
             <div class="flex justify-between items-center">
                 <img src="./assets/emergency.png" class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl" alt="">
-                <i id="heart-1" class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart"></i>
             </div>
             <div>
                 <h1 class="font-bold text-2xl mt-4">National Emergency Number</h1>
@@ -73,7 +73,7 @@
         <div class="w-full md:w-[300px] h-[360px] bg-white rounded-2xl p-8">
             <div class="flex justify-between items-center">
                 <img src="./assets/police.png" class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl" alt="">
-                <i id="heart-2" class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart"></i>
             </div>
             <div>
                 <h1 class="font-bold text-2xl mt-4">Police Helpline Number</h1>
@@ -91,7 +91,7 @@
         <div class="w-full md:w-[300px] h-[360px] bg-white rounded-2xl p-8">
             <div class="flex justify-between items-center">
                 <img src="./assets/fire-service.png" class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl" alt="">
-                <i id="heart-3" class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart"></i>
             </div>
             <div>
                 <h1 class="font-bold text-2xl mt-4">Fire Service <br>Number</h1>
@@ -117,7 +117,7 @@
         <div class="w-full md:w-[300px] h-[360px]  bg-white rounded-2xl p-8">
             <div class="flex justify-between items-center">
                 <img src="./assets/ambulance.png" class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl" alt="">
-                <i id="heart-4" class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart"></i>
             </div>
             <div>
                 <h1 class="font-bold text-2xl mt-4">Ambulance <br>Service</h1>
@@ -135,7 +135,7 @@
         <div class="w-full md:w-[300px] h-[360px]  bg-white rounded-2xl p-8">
             <div class="flex justify-between items-center">
                 <img src="./assets/emergency.png" class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl" alt="">
-                <i id="heart-5" class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart"></i>
             </div>
             <div>
                 <h1 class="font-bold text-2xl mt-4">Women & Child Helpline</h1>
@@ -153,7 +153,7 @@
         <div class="w-full md:w-[300px] h-[360px]   bg-white rounded-2xl  p-8">
             <div class="flex justify-between items-center">
                 <img src="./assets/emergency.png" class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl" alt="">
-                <i id="heart-6" class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart"></i>
             </div>
             <div>
                 <h1 class="font-bold text-2xl mt-4">Anti-Corruption Helpline</h1>
@@ -171,7 +171,7 @@
         <div class="w-full md:w-[300px] h-[360px]   bg-white rounded-2xl p-8">
             <div class="flex justify-between items-center">
                 <img src="./assets/emergency.png" class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl" alt="">
-                <i id="heart-7" class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart"></i>
             </div>
             <div>
                 <h1 class="font-bold text-2xl mt-4">Electricity <br>Helpline</h1>
@@ -190,7 +190,7 @@
         <div class="w-full md:w-[300px] h-[360px]   bg-white rounded-2xl p-8">
             <div class="flex justify-between items-center">
                 <img src="./assets/brac.png" class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl" alt="">
-                <i id="heart-8" class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart"></i>
             </div>
             <div>
                 <h1 class="font-bold text-2xl mt-4">Brac <br> Helpline</h1>
@@ -208,7 +208,7 @@
         <div class="w-full md:w-[300px] h-[360px]   bg-white rounded-2xl p-8">
             <div class="flex justify-between items-center">
                 <img src="./assets/Bangladesh-Railway.png" class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-xl" alt="">
-                <i id="heart-9" class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart"></i>
             </div>
             <div>
                 <h1 class="font-bold text-2xl mt-4">Bangladesh Railway Helpline </h1>
